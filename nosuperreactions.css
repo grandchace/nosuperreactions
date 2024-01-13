@@ -32,3 +32,17 @@ button[id="super-reaction-picker-tab"],
   animation: none !important;
 }
 div[aria-label='Add Super Reaction'] { display: none }
+
+
+
+/* Get rid of super reacts */
+[aria-label^="Add Super Reaction"],
+#message-add-reaction-1,
+#super-reaction-picker-tab,
+[class^="burstEmojiSection-"],
+[aria-label^="Reaction Picker Categories"],
+[class^="reactionDefault-"][aria-label*="super reaction"],
+[class^="reactionSelected-"][aria-label*="super reaction"],
+[class^="reactions-"] > div > [style*="background:"] {
+  display: none !important;
+}
